@@ -22,7 +22,7 @@
 /*====================================================
 		Declare Vars
 ====================================================*/
-var input1, input2, submit, output, answer, add, subtract, multiply, divide
+var input1, input2, submit, output, answer, add, subtract, multiply, divide, clear
 
 /*====================================================
 		Setup Vars
@@ -39,11 +39,11 @@ input2 = document.getElementById("num_two");
 //3. User selects a math button
 //3. Sets variable add to the addBtn
 add = document.getElementById("addBtn");
-//3. Sets variable sub to the subBtn
+//3. Sets variable subtract to the subBtn
 subtract = document.getElementById("subBtn");
-//3. Sets variable mult to multBtn
+//3. Sets variable multiply to multBtn
 multiply = document.getElementById("multBtn");
-//3. Sets variable div to divBtn
+//3. Sets variable divide to divBtn
 divide = document.getElementById("divBtn");
 
 //4. User presses calculateBtn
@@ -54,32 +54,41 @@ submit = document.getElementById("calculateBtn");
 //5. Sets variable answer to answer
 answer = document.getElementById("answer");
 
-/*====================================================
-		FUNCTION
-====================================================*/
+clear = document.getElementById("clear");
 
+/*====================================================
+		FUNCTIONS
+====================================================*/
+	// var clear = function() {
+	// 	var toClear = document.getElementsByClassName("clicked");
+	// 	toClear.className.replace(/clicked/, '');
+	// };
 
 
 	add.onclick = function () {
 		output = Number(input1.value) + Number(input2.value);
 		console.log(output);
-	}
+	};
 	subtract.onclick = function () {
 		output = Number(input1.value) - Number(input2.value);
 		console.log(output);
-	}
+	};
 	multiply.onclick = function () {
 		output = Number(input1.value) * Number(input2.value);
 		console.log(output);
-	}
+	};
 	divide.onclick = function () {
 		output = Number(input1.value) / Number(input2.value);
 		console.log(output);
-	}
+	};
 
-submit.onclick = function () {	
-	answer.innerHTML = output;
-};
+	submit.onclick = function () {	
+		answer.innerHTML = output;
+	};
+
+	// clear.onclick = function clearThis(input1, input2) {
+	// 	if (input1.value)
+	// };
 
 
 

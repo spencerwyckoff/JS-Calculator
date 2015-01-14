@@ -5,31 +5,44 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
-<body>
+	<body>
 
-	<img src="http://f.cl.ly/items/2Z1g1g1o0K3d360N3W0z/mathcat.png" alt="Math Cat" />
+		
+		<h1>THE DON'T BE A CALCU-HATER</h1>
+		<br />
 
-	<h3>Let's Add Some Values</h3>
+		<div class= "value-box">
+			<h3>Add Value 1:</h3>
+			<input type="number" id="num_one" />
+		<br />
+		</div>
+		
+		<div class= "value-box">
+			<h3>Add Value 2:</h3>
+			<input type="number" id="num_two" />
+			<br />
+		</div>
 
-	<input type="text" id="num_one" />
-	<br /><br />
+
+		<h3>Select a Function:</h3>
+		<button id="addBtn">+</button>
+		<button id="subBtn">-</button>
+		<button id="multBtn">x</button>
+		<button id="divBtn">&divide</button> 
+		<br/><br/>
+
 	
-	<button id="addBtn">+</button>
-	<button id="subBtn">-</button>
-	<button id="multBtn">x</button>
-	<button id="divBtn">&divide</button> <br/><br/>
-
-
-	<input type="text" id="num_two" />
-	<br /><br />
-	
+		
 	<input type="submit" value="Calculate" id="calculateBtn" />
 
 	<div class="answer">
-	  <br />
-	  Answer: <span id="answer"></span>
+	  <h3>Answer:</h3> 
+	  <div id="answer"></div>
 	</div>
 
+	<button id="clear">Clear</button>
+
+	<img src="assets/hater-heading.png" />
 
 
 	<script type="text/javascript" src="main.js"></script>
